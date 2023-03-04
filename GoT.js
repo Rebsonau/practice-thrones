@@ -11,7 +11,7 @@ const character = [{
 }, {
     firstName: "Tywin",
     house: "Lannister",
-    houseWords: "Hear me roar"
+    houseWords: "Hear me roar",
     houseSigil: "Lion"
 }]
 
