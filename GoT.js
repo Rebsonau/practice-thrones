@@ -114,3 +114,26 @@ console.log(Object.keys(character[0]));
 // console.log(Object.keys(character[7].length)); Doesn't work
 console.log(Object.keys(character[3]).length);
 // ^^ The .length must be outside of the brackets in which we select the location within the array
+
+// Does using .toUpperCase() affect the original value within an object? NO
+character[7].firstName.toUpperCase();
+console.log(character[7]);
+console.log(character[7].firstName.toUpperCase());
+// The only way to do this would be to change the value
+character[7].firstName = "MACE";
+console.log(character[7]);
+
+// Check .toLowerCase() for the above example
+console.log(character[7].firstName.toLowerCase());
+
+// Checking .charAt() for the third letter of the second character object
+console.log(character[1].house);
+console.log(character[1].house.charAt(2));
+
+// Let's try .includes using a similar example to what they have on mdn
+const sentence = 'The valyrian steel sword in house Stark is Ice.';
+const swordName = 'Ice';
+// console.log('The sword "${swordName}" ${sentence.includes(swordName) ? 'is' : 'is not'} in the sentence'); I couldn't get this to work. It wouldn't recognise ${swordName} as not being a string
+console.log(`The word "${swordName}" ${sentence.includes(swordName) ? 'is' : 'is not'} in the sentence`);
+// ^^ had to be pasted and altered to work, 
+console.log(sentence);
