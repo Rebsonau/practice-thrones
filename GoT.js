@@ -137,3 +137,6 @@ const swordName = 'Ice';
 console.log(`The word "${swordName}" ${sentence.includes(swordName) ? 'is' : 'is not'} in the sentence`);
 // ^^ had to be pasted and altered to work, 
 console.log(sentence);
+
+// Checking use of + and , in a string to get spaces in the correct position
+console.log("The leader of house", character[3].house, "is", character[3].firstName + ". The house sigil is a", character[3].houseSigil, "and the house words are \"" + character[3].houseWords + "\".");
